@@ -1,0 +1,114 @@
+*,*::before,*::after{
+  padding:0px;
+  margin: 0px;
+  box-sizing:border-box;
+}
+
+body{
+  height:100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right,#75d6f9,#ffff00);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  justify-content:center;
+  align-items: center;    
+  min-height: 50vh;
+  width: 400px;     /* or something reasonable for mobile/desktop balance */
+  padding: 20px;
+  border-radius:10px;
+}
+#error-message{
+  color: rgb(217, 47, 47);
+}
+
+/* Style the input + button container */
+.input-container {
+  display: flex;
+  gap: 10px;
+  /* let it adapt width of container */
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Style the text input */
+.input-container input[type="text"] {
+  flex: 1; /* take remaining space next to button */
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-container input[type="text"]:focus {
+  border-color: #777;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Style the button */
+.input-container button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;  /* a blue shade, change if you like */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+.input-container button:active {
+  transform: scale(0.98);
+}
+
+/* Weather info container */
+#weather-info {
+  text-align: center;
+  padding: 15px 20px;
+  background-color: #ffe4e1; /* light tint that goes well with pink or change if clashes */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: 90%;
+}
+
+#weather-info h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+#weather-info p {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+
+.hidden{
+  display: none;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  position: absolute;
+  height:15%;
+  width:100%;
+  top: 85%;
+  text-align: center;
+}
